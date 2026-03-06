@@ -24,7 +24,7 @@ const AchievementsSection = () => (
         </h2>
         <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-12 rounded-full" />
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
           {stats.map((stat, i) => (
             <motion.div
               key={stat.label}
