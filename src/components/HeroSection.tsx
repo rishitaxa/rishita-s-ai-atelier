@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Download, Mail } from "lucide-react";
-import profileImg from "@/assets/profile-placeholder.png";
 
 const HeroSection = () => {
   const scrollTo = (id: string) => {
@@ -64,19 +63,17 @@ const HeroSection = () => {
             </button>
           </div>
         </motion.div>
-
-        {/* Profile image */}
+        {/* Decorative orb instead of profile */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex-shrink-0"
+          className="flex-shrink-0 hidden lg:block"
         >
-          <div className="relative">
-            <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-primary/30 via-secondary/20 to-rose-gold/30 blur-xl animate-pulse-glow" />
-            <div className="relative w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden glass border-2 border-primary/20">
-              <img src={profileImg} alt="Rishita Sharma" className="w-full h-full object-cover" />
-            </div>
+          <div className="relative w-64 h-64">
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 via-secondary/15 to-rose-gold/20 blur-2xl animate-pulse-glow" />
+            <div className="absolute inset-4 rounded-full bg-gradient-to-br from-primary/10 via-secondary/10 to-rose-gold/10 blur-xl animate-pulse-glow" style={{ animationDelay: "1s" }} />
+            <div className="absolute inset-8 rounded-full glass border border-primary/10 animate-float" />
           </div>
         </motion.div>
       </div>
