@@ -44,7 +44,7 @@ const ParticleBackground = () => {
       "180, 130, 220", // lavender
       "220, 140, 170", // pastel pink
       "210, 160, 140", // rose gold
-      "160, 100, 220", // violet
+      "190, 120, 200", // violet
     ];
 
     const animate = () => {
