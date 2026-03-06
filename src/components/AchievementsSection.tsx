@@ -1,11 +1,13 @@
 import { motion } from "framer-motion";
-import { Trophy, Flame, Target, Award } from "lucide-react";
+import { Trophy, Flame, Target, Award, Code2, BookOpen } from "lucide-react";
 
 const stats = [
-  { icon: Trophy, value: "480+", label: "LeetCode Problems", color: "text-primary" },
+  { icon: Trophy, value: "500+", label: "LeetCode Problems", color: "text-primary" },
   { icon: Flame, value: "200+", label: "Day Coding Streak", color: "text-secondary" },
   { icon: Target, value: "82%+", label: "Acceptance Rate", color: "text-rose-gold" },
-  { icon: Award, value: "Top", label: "Competitive Programmer", color: "text-lavender" },
+  { icon: Code2, value: "500+", label: "Platform Problems", color: "text-lavender" },
+  { icon: Award, value: "Top", label: "Competitive Programmer", color: "text-pastel-pink" },
+  { icon: BookOpen, value: "5+", label: "Platforms Active", color: "text-violet-glow" },
 ];
 
 const AchievementsSection = () => (
